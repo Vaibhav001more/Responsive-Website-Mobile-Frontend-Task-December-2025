@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Website Task</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="hamburger" id="hamburger" aria-label="Toggle sidebar menu">
+      <div></div><div></div><div></div>
+    </div>
+    <h1>Responsive Website Task</h1>
+  </header>
+
+  <div class="main">
+    <aside id="sidebar">
+      <ul>
+        <li>Home</li><li>About</li><li>Gallery</li><li>Services</li><li>Contact</li>
+      </ul>
+    </aside>
+
+    <section class="container-area">
+      <div class="container">
+        <h2>Container 1: Image Carousel</h2>
+        <div class="carousel" id="carousel">
+          <img src="https://via.placeholder.com/600x300/2563eb/ffffff?text=Slide+1" class="active" alt="Slide 1 - Blue background">
+          <img src="https://via.placeholder.com/600x300/1e40af/ffffff?text=Slide+2" alt="Slide 2 - Dark Blue background">
+          <img src="https://via.placeholder.com/600x300/0f172a/ffffff?text=Slide+3" alt="Slide 3 - Black background">
+          <button class="prev" aria-label="Previous slide">&#10094;</button>
+          <button class="next" aria-label="Next slide">&#10095;</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Container 2: Text Block</h2>
+        <p>This section provides additional information about the website layout, responsive design principles, and objectives of this task.</p>
+      </div>
+
+      <div class="container">
+        <h2>Container 3: Interactive Element</h2>
+        <p>Use buttons below to interact:</p>
+        <button onclick="alert('Button Clicked!')">Click Me</button>
+      </div>
+
+      <div class="container">
+        <h2>Container 4: Static Content</h2>
+        <p>Static text and images that remain constant regardless of user interactions or screen size changes.</p>
+        <img src="https://via.placeholder.com/400x200/f1f5f9/0f172a?text=Static+Image" alt="Static placeholder example" style="width:100%; border-radius:8px; margin-top:10px;">
+      </div>
+
+      <div class="container">
+        <h2>Container 5: Buttons</h2>
+        <div style="margin-top:10px;">
+          <button>Button A</button>
+          <button>Button B</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Container 6: Animation Example</h2>
+        <div id="animatedBox" style="width:100px;height:100px;background:#2563eb;border-radius:8px;animation:move 3s infinite alternate;"></div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Responsive Website Task | Designed for Web & Mobile Adaptation</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

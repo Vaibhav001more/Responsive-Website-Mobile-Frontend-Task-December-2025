@@ -1,0 +1,17 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{display:flex;flex-direction:column;min-height:100vh;background:#f8fafc;color:#0f172a;}
+header{background:#1e293b;color:white;padding:1rem 2rem;text-align:center;position:fixed;width:100%;top:0;z-index:1000;display:flex;justify-content:center;align-items:center;}
+.hamburger{display:none;position:absolute;left:20px;cursor:pointer;flex-direction:column;justify-content:space-between;height:20px;}
+.hamburger div{width:25px;height:3px;background:white;border-radius:3px;}
+.main{display:flex;margin-top:70px;flex:1;}
+aside{width:240px;background:#f1f5f9;padding:1rem;height:calc(100vh - 70px);position:fixed;top:70px;left:0;transition:transform .3s ease;box-shadow:2px 0 8px rgba(0,0,0,0.05);}
+aside ul{list-style:none;}aside li{margin:15px 0;cursor:pointer;color:#334155;transition:color .3s ease;}aside li:hover{color:#1e40af;}
+.container-area{margin-left:260px;display:grid;grid-template-columns:repeat(2,1fr);gap:20px;padding:2rem;transition:all .3s ease;}
+.container{background:#fff;padding:1rem;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.1);} .container h2{margin-bottom:10px;color:#1e293b;}
+.carousel{position:relative;overflow:hidden;border-radius:10px;} .carousel img{width:100%;display:none;} .carousel img.active{display:block;}
+.carousel button{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.5);color:white;border:none;padding:8px 12px;cursor:pointer;border-radius:4px;}
+.prev{left:10px;} .next{right:10px;}
+button{background:#2563eb;border:none;color:white;padding:10px 16px;margin-right:8px;border-radius:6px;cursor:pointer;transition:background .3s ease;}button:hover{background:#1e40af;}
+footer{background:#1e293b;color:#e2e8f0;text-align:center;padding:1rem;font-size:.9rem;margin-top:auto;}
+@media(max-width:768px){aside{transform:translateX(-100%);position:fixed;}aside.active{transform:translateX(0);} .hamburger{display:flex;}header h1{font-size:1.2rem;} .container-area{grid-template-columns:1fr;margin-left:0;}}
+@keyframes move{from{transform:translateX(0);}to{transform:translateX(200px);}}
